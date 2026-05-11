@@ -142,7 +142,7 @@ export default function ContactForm() {
 
             {/* Contact Info */}
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">Mi Taller</h2>
+              <h2 className="text-3xl font-bold mb-6 text-gray-900">El Taller</h2>
               
               <div className="space-y-6 mb-8">
                 <div className="flex items-start gap-4">
@@ -193,10 +193,10 @@ export default function ContactForm() {
 
               {/* Workshop Visit */}
               <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-                <h3 className="font-semibold text-gray-900 mb-4">Visita mi Taller</h3>
+                <h3 className="font-semibold text-gray-900 mb-4">Visita Nuestro Taller</h3>
                 <p className="text-gray-600 mb-4">
-                  Te invito a visitar mi taller para ver mi trabajo en persona y tocar 
-                  las diferentes maderas con las que trabajo. Podemos discutir tu proyecto 
+                  Te invitamos a visitar nuestro taller para ver nuestro trabajo en persona y tocar 
+                  las diferentes maderas con las que trabajamos. Podemos discutir tu proyecto 
                   mientras disfrutas del aroma de la madera fresca.
                 </p>
                 <div className="flex items-center gap-2 text-amber-600">
@@ -221,9 +221,9 @@ export default function ContactForm() {
       {/* Additional Info */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">¿Qué tipo de trabajos realizo?</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">¿Qué tipo de trabajos realizamos?</h2>
           <p className="text-xl text-gray-600 mb-12">
-            Me especializo en diversos aspectos de la carpintería artesanal. Aquí hay algunas formas en que puedo ayudarte:
+            Nos especializamos en diversos aspectos de la carpintería artesanal. Aquí hay algunas formas en que podemos ayudarte:
           </p>
           
           <div className="grid md:grid-cols-3 gap-8">

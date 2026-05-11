@@ -190,8 +190,8 @@ export default function HomePage() {
             ¿Tienes un proyecto en mente?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Estoy aquí para ayudarte a crear la pieza perfecta para tu espacio. 
-            ¡Hablemos de tus ideas y las haré realidad!
+            Estamos aquí para ayudarte a crear la pieza perfecta para tu espacio. 
+            ¡Hablemos de tus ideas y las haremos realidad!
           </p>
           <Link
             href="/contacto"

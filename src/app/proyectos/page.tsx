@@ -123,9 +123,9 @@ export default function ProjectsPage() {
         ></div>
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold mb-6">Mis Trabajos</h1>
+            <h1 className="text-5xl font-bold mb-6">Nuestros Trabajos</h1>
             <p className="text-xl text-amber-100 max-w-2xl mx-auto">
-              Una selección de mis trabajos más recientes en carpintería artesanal, 
+              Una selección de nuestros trabajos más recientes en carpintería artesanal, 
               desde muebles a medida hasta restauraciones de piezas históricas
             </p>
           </div>
@@ -164,9 +164,9 @@ export default function ProjectsPage() {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Mis Trabajos Recientes</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Trabajos Recientes</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Explora mis trabajos más recientes y descubre cómo he ayudado a diferentes clientes 
+              Explora nuestros trabajos más recientes y descubre cómo hemos ayudado a diferentes clientes 
               a crear piezas únicas y duraderas para sus espacios
             </p>
           </div>
