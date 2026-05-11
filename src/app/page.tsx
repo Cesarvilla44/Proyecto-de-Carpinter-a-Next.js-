@@ -2,8 +2,8 @@ import Link from 'next/link'
 import { ArrowRight, Hammer, Award, Clock, TreePine, Ruler } from 'lucide-react'
 
 export const metadata = {
-  title: 'Carpintería Artesanal - Carpintería Los Robles',
-  description: 'Mi taller de carpintería artesanal. Muebles a medida, restauración y carpintería estructural. Calidad y tradición en cada pieza.',
+  title: 'Carpintería Los Artesanos - Muebles a Medida y Restauración',
+  description: 'Carpintería Los Artesanos. Expertos en muebles a medida, restauración y carpintería estructural. Calidad artesanal y tradición en cada pieza.',
 }
 
 export default function HomePage() {
@@ -21,14 +21,14 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Soy <span className="text-amber-200">César Villacañas Moreno</span>
+                <span className="text-amber-200">Carpintería Los Artesanos</span>
               </h1>
               <p className="text-xl md:text-2xl text-amber-100 mb-8">
-                Maestro Carpintero Artesano
+                Maestros Carpinteros Artesanos
               </p>
               <p className="text-lg text-amber-200 mb-12 max-w-3xl mx-auto">
-                Con más de 15 años de experiencia, transformo la madera en obras de arte que duran generaciones. 
-                Cada pieza que sale de mi taller lleva la firma de la tradición y la calidad artesanal.
+                Con más de 15 años de experiencia, transformamos la madera en obras de arte que duran generaciones. 
+                Cada pieza que sale de nuestro taller lleva la firma de la tradición y la calidad artesanal.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -36,7 +36,7 @@ export default function HomePage() {
                 href="/proyectos"
                 className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105 inline-flex items-center justify-center gap-2 shadow-lg"
               >
-                Ver mis trabajos
+                Ver nuestros trabajos
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
@@ -54,9 +54,9 @@ export default function HomePage() {
       <section className="py-20 px-4 bg-amber-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-gray-900">Mis Servicios Artesanales</h2>
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">Nuestros Servicios Artesanales</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Especialidades que domino para crear piezas únicas y duraderas
+              Especialidades que dominamos para crear piezas únicas y duraderas
             </p>
           </div>
 
@@ -115,15 +115,15 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold mb-6 text-gray-900">
-                Mi Historia Artesanal
+                Nuestra Historia Artesanal
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Soy César Villacañas Moreno, un maestro carpintero con más de 15 años de experiencia. 
-                Mi pasión por la madera nació en el taller de mi padre, donde aprendí los secretos 
-                de este noble oficio.
+                Carpintería Los Artesanos es un taller familiar con más de 15 años de experiencia. 
+                Nuestra pasión por la madera nació de generación en generación, aprendiendo los secretos 
+                de este noble oficio desde nuestros ancestros.
               </p>
               <p className="text-lg text-gray-600 mb-8">
-                Combino técnicas tradicionales transmitidas de generación en generación con 
+                Combinamos técnicas tradicionales transmitidas de generación en generación con 
                 tecnología moderna para ofrecer piezas que unen la calidez del pasado con las 
                 exigencias del presente.
               </p>
@@ -145,7 +145,7 @@ export default function HomePage() {
                 href="/nosotros"
                 className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105 inline-flex items-center gap-2 shadow-lg"
               >
-                Conocer mi historia
+                Conocer nuestra historia
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </div>

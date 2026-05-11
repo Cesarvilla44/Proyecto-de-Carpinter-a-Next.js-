@@ -34,7 +34,7 @@ export default function ContactForm() {
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-bold mb-6">Contacto</h1>
-            <p className="text-xl text-amber-100">Visita mi taller o contáctame para tu proyecto de carpintería</p>
+            <p className="text-xl text-amber-100">Visita nuestro taller o contáctanos para tu proyecto de carpintería</p>
           </div>
         </div>
       </section>
@@ -47,8 +47,8 @@ export default function ContactForm() {
             <div>
               <h2 className="text-3xl font-bold mb-6 text-gray-900">Solicita tu Presupuesto</h2>
               <p className="text-gray-600 mb-8">
-                Cuéntame sobre tu proyecto de carpintería y te prepararé un presupuesto detallado. 
-                Trabajo con muebles a medida, restauración y carpintería estructural.
+                Cuéntanos sobre tu proyecto de carpintería y te prepararemos un presupuesto detallado. 
+                Trabajamos con muebles a medida, restauración y carpintería estructural.
               </p>
 
               {formState?.success && (

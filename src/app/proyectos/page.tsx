@@ -5,8 +5,8 @@ import { Suspense } from 'react'
 import { Hammer, TreePine, Award, Palette, ExternalLink, Eye } from 'lucide-react'
 
 export const metadata = {
-  title: 'Mis Trabajos - César Villacañas Moreno',
-  description: 'Explora mis trabajos de carpintería artesanal. Muebles a medida, restauración y carpintería estructural.',
+  title: 'Nuestros Trabajos - Carpintería Los Artesanos',
+  description: 'Explora nuestros trabajos de carpintería artesanal. Muebles a medida, restauración y carpintería estructural.',
 }
 
 export const revalidate = 3600 // ISR: revalidar cada hora

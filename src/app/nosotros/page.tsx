@@ -1,8 +1,8 @@
 import { Hammer, Award, Target, Clock, TreePine, BookOpen, Mail, Phone, MapPin } from 'lucide-react'
 
 export const metadata = {
-  title: 'Sobre Mí - César Villacañas Moreno',
-  description: 'Conoce mi historia como maestro carpintero y mi pasión por la carpintería artesanal.',
+  title: 'Sobre Nosotros - Carpintería Los Artesanos',
+  description: 'Conoce nuestra historia como maestros carpinteros y nuestra pasión por la carpintería artesanal.',
 }
 
 export default function AboutPage() {
@@ -18,9 +18,9 @@ export default function AboutPage() {
         ></div>
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold mb-6">Sobre Mí</h1>
+            <h1 className="text-5xl font-bold mb-6">Sobre Nosotros</h1>
             <p className="text-xl text-amber-100 max-w-2xl mx-auto">
-              Mi historia como maestro carpintero y mi pasión por transformar la madera en obras de arte
+              Nuestra historia como maestros carpinteros y nuestra pasión por transformar la madera en obras de arte
             </p>
           </div>
         </div>
@@ -31,20 +31,20 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">Mi Trayectoria Artesanal</h2>
+              <h2 className="text-3xl font-bold mb-6 text-gray-900">Nuestra Trayectoria Artesanal</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Soy César Villacañas Moreno, y mi historia con la madera comenzó hace más de 15 años 
-                en el taller de mi padre. Desde pequeño, aprendí a apreciar el aroma de la madera recién 
-                cortada y la satisfacción de crear algo con mis propias manos.
+                Carpintería Los Artesanos es un taller familiar donde nuestra historia con la madera comenzó 
+                hace más de 15 años. Desde nuestros inicios, aprendimos a apreciar el aroma de la madera recién 
+                cortada y la satisfacción de crear algo con nuestras propias manos.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                A lo largo de los años, he perfeccionado técnicas tradicionales transmitidas de 
+                A lo largo de los años, hemos perfeccionado técnicas tradicionales transmitidas de 
                 generación en generación, combinándolas con tecnología moderna para ofrecer piezas 
                 que unen la calidez del pasado con las exigencias del presente.
               </p>
               <p className="text-lg text-gray-600">
-                Cada pieza que sale de mi taller lleva mi sello personal: atención al detalle, 
-                compromiso con la calidad y un profundo respeto por la madera como material noble 
+                Cada pieza que sale de nuestro taller lleva nuestro sello de calidad: atención al detalle, 
+                compromiso con la excelencia y un profundo respeto por la madera como material noble 
                 y sostenible.
               </p>
             </div>
@@ -55,10 +55,10 @@ export default function AboutPage() {
                     <BookOpen className="w-6 h-6 text-amber-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">Formación Tradicional</h3>
+                    <h3 className="font-semibold text-gray-900 mb-2">Tradición Familiar</h3>
                     <p className="text-gray-600">
-                      Aprendí el oficio de mi padre, quien a su vez lo aprendió de su padre. 
-                      Tres generaciones de maestros carpinteros.
+                      Heredamos el oficio de nuestros ancestros, transmitido de padres a hijos. 
+                      Tres generaciones de maestros carpinteros al servicio de nuestros clientes.
                     </p>
                   </div>
                 </div>
@@ -69,8 +69,8 @@ export default function AboutPage() {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Especialización</h3>
                     <p className="text-gray-600">
-                      Me especialicé en muebles a medida y restauración, preservando 
-                      la esencia de cada pieza mientras la adapto a las necesidades modernas.
+                      Nos especializamos en muebles a medida y restauración, preservando 
+                      la esencia de cada pieza mientras la adaptamos a las necesidades modernas.
                     </p>
                   </div>
                 </div>
@@ -81,7 +81,7 @@ export default function AboutPage() {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Sostenibilidad</h3>
                     <p className="text-gray-600">
-                      Trabajo exclusivamente con maderas certificadas y sostenibles, 
+                      Trabajamos exclusivamente con maderas certificadas y sostenibles, 
                       respetando siempre el medio ambiente y los bosques.
                     </p>
                   </div>
@@ -96,9 +96,9 @@ export default function AboutPage() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-gray-900">Mis Competencias Artesanales</h2>
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">Nuestras Competencias Artesanales</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Técnicas y especialidades que domino para crear piezas únicas y duraderas
+              Técnicas y especialidades que dominamos para crear piezas únicas y duraderas
             </p>
           </div>
 
@@ -176,9 +176,9 @@ export default function AboutPage() {
       <section className="py-20 px-4 bg-amber-50">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-gray-900">Mi Filosofía de Trabajo</h2>
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">Nuestra Filosofía de Trabajo</h2>
             <p className="text-xl text-gray-600">
-              Los principios que guian mi taller y cada pieza que creo
+              Los principios que guian nuestro taller y cada pieza que creamos
             </p>
           </div>
 
@@ -189,12 +189,12 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-bold mb-4 text-gray-900">Calidad Artesanal</h3>
               <p className="text-gray-600 mb-4">
-                Cada pieza que creo es única. No trabajo en serie, sino que dedico 
+                Cada pieza que creamos es única. No trabajamos en serie, sino que dedicamos 
                 el tiempo necesario para asegurar que cada corte, cada unión y cada 
                 acabado sea perfecto.
               </p>
               <p className="text-gray-600">
-                La calidad no es negociable en mi taller. Cada proyecto recibe la 
+                La calidad no es negociable en nuestro taller. Cada proyecto recibe la 
                 misma atención al detalle, sin importar su tamaño.
               </p>
             </div>
@@ -205,12 +205,12 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-bold mb-4 text-gray-900">Respeto por la Madera</h3>
               <p className="text-gray-600 mb-4">
-                Trato la madera con el respeto que se merece. Conozco cada tipo de 
+                Tratamos la madera con el respeto que se merece. Conocemos cada tipo de 
                 madera, sus características, su comportamiento y cómo sacar lo mejor 
                 de cada una.
               </p>
               <p className="text-gray-600">
-                Utilizo solo maderas certificadas y sostenibles, asegurando que mi 
+                Utilizamos solo maderas certificadas y sostenibles, asegurando que nuestro 
                 trabajo no dañe los bosques para las futuras generaciones.
               </p>
             </div>
@@ -221,12 +221,12 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-bold mb-4 text-gray-900">Tradición e Innovación</h3>
               <p className="text-gray-600 mb-4">
-                Respeto las técnicas tradicionales aprendidas de mi padre, pero no 
-                temo incorporar tecnología moderna cuando mejora el resultado final 
+                Respetamos las técnicas tradicionales aprendidas de nuestros ancestros, pero no 
+                tememos incorporar tecnología moderna cuando mejora el resultado final 
                 sin comprometer la esencia artesanal.
               </p>
               <p className="text-gray-600">
-                Lo antiguo y lo moderno pueden coexistir perfectamente en mi taller, 
+                Lo antiguo y lo moderno pueden coexistir perfectamente en nuestro taller, 
                 creando piezas que son atemporales pero funcionales.
               </p>
             </div>
@@ -237,13 +237,13 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-bold mb-4 text-gray-900">Durabilidad Vitalicia</h3>
               <p className="text-gray-600 mb-4">
-                Construyo para que dure generaciones. Cada pieza está diseñada para 
+                Construimos para que dure generaciones. Cada pieza está diseñada para 
                 resistir el paso del tiempo, convirtiéndose en parte de la historia 
                 de las familias que la poseen.
               </p>
               <p className="text-gray-600">
-                Ofrezco garantía vitalicia en mis trabajos porque confío plenamente 
-                en la calidad de los materiales y la solidez de mi técnica.
+                Ofrecemos garantía vitalicia en nuestros trabajos porque confiamos plenamente 
+                en la calidad de los materiales y la solidez de nuestra técnica.
               </p>
             </div>
           </div>
@@ -264,11 +264,11 @@ export default function AboutPage() {
           </h2>
           <p className="text-xl mb-8 opacity-90">
             Si estás buscando una pieza única para tu espacio o necesitas restaurar 
-            un mueble con valor sentimental, estaré encantado de ayudarte. ¡Visita mi taller!
+            un mueble con valor sentimental, estaremos encantados de ayudarte. ¡Visita nuestro taller!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:cesar.villacañas@email.com"
+              href="mailto:info@carpinterialosartesanos.com"
               className="bg-white text-amber-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all inline-flex items-center gap-2"
             >
               <Mail className="w-5 h-5" />

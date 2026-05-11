@@ -16,8 +16,8 @@ export default function Header() {
               <Hammer className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-900">César Villacañas Moreno</h1>
-              <p className="text-sm text-gray-600">Carpintería Artesanal</p>
+              <h1 className="text-xl font-bold text-gray-900">Carpintería Los Artesanos</h1>
+              <p className="text-sm text-gray-600">Muebles a Medida</p>
             </div>
           </Link>
           
@@ -27,10 +27,10 @@ export default function Header() {
               Inicio
             </Link>
             <Link href="/nosotros" className="text-gray-700 hover:text-amber-600 transition-colors font-medium">
-              Sobre Mí
+              Nosotros
             </Link>
             <Link href="/proyectos" className="text-gray-700 hover:text-amber-600 transition-colors font-medium">
-              Mis Trabajos
+              Trabajos
             </Link>
             <Link href="/contacto" className="text-gray-700 hover:text-amber-600 transition-colors font-medium">
               Contacto
@@ -54,10 +54,10 @@ export default function Header() {
                 Inicio
               </Link>
               <Link href="/nosotros" className="text-gray-700 hover:text-amber-600 transition-colors font-medium">
-                Sobre Mí
+                Nosotros
               </Link>
               <Link href="/proyectos" className="text-gray-700 hover:text-amber-600 transition-colors font-medium">
-                Mis Trabajos
+                Trabajos
               </Link>
               <Link href="/contacto" className="text-gray-700 hover:text-amber-600 transition-colors font-medium"
                 onClick={() => setIsOpen(false)}>

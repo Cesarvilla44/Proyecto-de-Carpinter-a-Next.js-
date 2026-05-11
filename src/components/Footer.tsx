@@ -10,15 +10,15 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Personal Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">César Villacañas Moreno</h3>
+            <h3 className="text-xl font-bold mb-4">Carpintería Los Artesanos</h3>
             <p className="text-gray-300 mb-4">
-              Desarrollador Full Stack especializado en crear soluciones web modernas y eficientes. 
-              Apasionado por la tecnología y el diseño de interfaces de usuario.
+              Maestros carpinteros artesanos con más de 15 años de experiencia. 
+              Especializados en muebles a medida, restauración y carpintería estructural.
             </p>
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-gray-300">
                 <Mail className="w-4 h-4" />
-                <span>cesar.villacañas@email.com</span>
+                <span>info@carpinterialosartesanos.com</span>
               </div>
               <div className="flex items-center gap-2 text-gray-300">
                 <Phone className="w-4 h-4" />
@@ -79,7 +79,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 César Villacañas Moreno. Portafolio de Prácticas Profesionales.</p>
+          <p>&copy; 2024 Carpintería Los Artesanos. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
