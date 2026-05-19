@@ -1,24 +1,37 @@
 'use client'
 
 import { useState } from 'react'
-import { submitContactForm, ContactFormState } from './actions'
+import { submitContactForm } from '@/app/actions/contact'
 import { Mail, Phone, MapPin, Clock, Hammer, Send } from 'lucide-react'
 
 export default function ContactForm() {
-  const [formState, setFormState] = useState<ContactFormState | null>(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [message, setMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null)
 
-  async function handleSubmit(formData: FormData) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
     setIsSubmitting(true)
-    setFormState(null)
-    
-    const result = await submitContactForm(formState || { success: false, message: '' }, formData)
-    
-    if (result.success) {
-      // Reset form on success
-      const form = document.getElementById('contact-form') as HTMLFormElement
-      form?.reset()
+    setMessage(null)
+
+    const formData = new FormData(e.currentTarget)
+    const data = {
+      name: formData.get('name') as string,
+      email: formData.get('email') as string,
+      phone: formData.get('phone') as string,
+      message: formData.get('message') as string,
+      projectType: formData.get('projectType') as string,
     }
+
+    const result = await submitContactForm(data)
+
+    if (result.success) {
+      setMessage({ type: 'success', text: result.message })
+      e.currentTarget.reset()
+    } else {
+      setMessage({ type: 'error', text: result.message })
+    }
+
+    setIsSubmitting(false)
   }
 
   return (
@@ -51,21 +64,14 @@ export default function ContactForm() {
                 Trabajamos con muebles a medida, restauración y carpintería estructural.
               </p>
 
-              {formState?.success && (
-                <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg mb-6">
-                  {formState.message}
-                </div>
-              )}
-
-              {formState?.errors && (
-                <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg mb-6">
-                  {formState.message}
+              {message && (
+                <div className={`${message.type === 'success' ? 'bg-green-50 border-green-200 text-green-800' : 'bg-red-50 border-red-200 text-red-800'} border px-4 py-3 rounded-lg mb-6`}>
+                  {message.text}
                 </div>
               )}
 
               <form 
-                id="contact-form"
-                action={handleSubmit}
+                onSubmit={handleSubmit}
                 className="space-y-6"
               >
                 <div>
@@ -80,9 +86,6 @@ export default function ContactForm() {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent"
                     placeholder="Tu nombre completo"
                   />
-                  {formState?.errors?.name && (
-                    <p className="text-red-500 text-sm mt-1">{formState.errors.name[0]}</p>
-                  )}
                 </div>
 
                 <div>
@@ -97,12 +100,38 @@ export default function ContactForm() {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent"
                     placeholder="tu@email.com"
                   />
-                  {formState?.errors?.email && (
-                    <p className="text-red-500 text-sm mt-1">{formState.errors.email[0]}</p>
-                  )}
                 </div>
 
-                
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-900 mb-2">
+                    Teléfono
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent"
+                    placeholder="+34 600 000 000"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="projectType" className="block text-sm font-medium text-gray-900 mb-2">
+                    Tipo de Proyecto
+                  </label>
+                  <select
+                    id="projectType"
+                    name="projectType"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent"
+                  >
+                    <option value="">Selecciona un tipo</option>
+                    <option value="muebles">Muebles a Medida</option>
+                    <option value="restauracion">Restauración</option>
+                    <option value="estructural">Carpintería Estructural</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-900 mb-2">
                     Mensaje *
@@ -115,9 +144,6 @@ export default function ContactForm() {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent resize-none"
                     placeholder="Describe el mueble o trabajo de carpintería que necesitas..."
                   />
-                  {formState?.errors?.message && (
-                    <p className="text-red-500 text-sm mt-1">{formState.errors.message[0]}</p>
-                  )}
                 </div>
 
                 <button
