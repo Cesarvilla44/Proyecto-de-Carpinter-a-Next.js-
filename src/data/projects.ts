@@ -1,124 +1,145 @@
 export interface Project {
-  slug: string
-  title: string
-  description: string
-  fullDescription: string
-  category: string
-  image: string
-  images: string[]
-  materials: string[]
-  year: number
-  duration: string
+  slug: string;
+  title: string;
+  description: string;
+  imageUrl?: string;
+  fullDescription: string;
+  category: string;
+  image: string;
+  images: string[];
+  materials: string[];
+  year: number;
+  duration: string;
 }
 
 export const projects: Project[] = [
   {
-    slug: 'mesa-roble-macizo',
-    title: 'Mesa de Roble Macizo',
-    description: 'Mesa de comedor de roble macizo con acabado natural para una familia en Madrid.',
-    fullDescription: 'Esta mesa de comedor fue diseñada y fabricada a medida para una familia que buscaba una pieza centerpiece para su comedor. Utilizamos roble macizo de primera calidad, seleccionado por su veta y durabilidad. El diseño incluye patas cónicas que le dan un toque moderno mientras mantiene la calidez de la madera tradicional. El acabado es un aceite natural que protege la madera sin alterar su color ni textura.',
-    category: 'Muebles a medida',
-    image: '/images/mesa-roble.jpg',
+    slug: "mesa-roble-macizo",
+    title: "Mesa de Roble Macizo",
+    description:
+      "Mesa de comedor de roble macizo con acabado natural para una familia en Madrid.",
+    imageUrl: "https://images.unsplash.com/photo-1577140917170-285a8e5b9337?w=800&q=80",
+    fullDescription:
+      "Esta mesa de comedor fue diseñada y fabricada a medida para una familia que buscaba una pieza centerpiece para su comedor. Utilizamos roble macizo de primera calidad, seleccionado por su veta y durabilidad. El diseño incluye patas cónicas que le dan un toque moderno mientras mantiene la calidez de la madera tradicional. El acabado es un aceite natural que protege la madera sin alterar su color ni textura.",
+    category: "Muebles a medida",
+    image: "https://images.unsplash.com/photo-1577140917170-285a8e5b9337?w=800&q=80",
     images: [
-      '/images/mesa-roble.jpg',
-      '/images/mesa-roble-detalle.jpg',
-      '/images/mesa-roble-proceso.jpg'
+      "https://images.unsplash.com/photo-1577140917170-285a8e5b9337?w=800&q=80",
+      "https://images.unsplash.com/photo-1577140917170-285a8e5b9337?w=800&q=80",
+      "https://images.unsplash.com/photo-1577140917170-285a8e5b9337?w=800&q=80",
     ],
-    materials: ['Roble macizo', 'Aceite natural', 'Metal para refuerzos'],
+    materials: ["Roble macizo", "Aceite natural", "Metal para refuerzos"],
     year: 2024,
-    duration: '3 semanas'
+    duration: "3 semanas",
   },
   {
-    slug: 'reforma-loft-industrial',
-    title: 'Reforma Loft Industrial',
-    description: 'Transformación completa de un loft industrial con estructuras de madera y metal.',
-    fullDescription: 'Proyecto integral de carpintería para la reforma de un loft industrial en el centro de Madrid. Creamos vigas decorativas, divisiones de espacio, escaleras y muebles a medida que complementan el estilo industrial del espacio. La combinación de madera reclaimed con elementos de metal crea una estética única que respeta la historia del edificio.',
-    category: 'Carpintería estructural',
-    image: '/images/loft-industrial.jpg',
+    slug: "reforma-loft-industrial",
+    title: "Reforma Loft Industrial",
+    description:
+      "Transformación completa de un loft industrial con estructuras de madera y metal.",
+    fullDescription:
+      "Proyecto integral de carpintería para la reforma de un loft industrial en el centro de Madrid. Creamos vigas decorativas, divisiones de espacio, escaleras y muebles a medida que complementan el estilo industrial del espacio. La combinación de madera reclaimed con elementos de metal crea una estética única que respeta la historia del edificio.",
+    category: "Carpintería estructural",
+    image: "https://images.unsplash.com/photo-1565183938294-7563f3ff68c5?w=800&q=80",
     images: [
-      '/images/loft-industrial.jpg',
-      '/images/loft-escalera.jpg',
-      '/images/loft-vigas.jpg',
-      '/images/loft-divisiones.jpg'
+      "https://images.unsplash.com/photo-1565183938294-7563f3ff68c5?w=800&q=80",
+      "https://images.unsplash.com/photo-1565183938294-7563f3ff68c5?w=800&q=80",
+      "https://images.unsplash.com/photo-1565183938294-7563f3ff68c5?w=800&q=80",
+      "https://images.unsplash.com/photo-1565183938294-7563f3ff68c5?w=800&q=80",
     ],
-    materials: ['Madera reclaimed', 'Acero negro', 'Roble', 'Pino treated'],
+    materials: ["Madera reclaimed", "Acero negro", "Roble", "Pino treated"],
     year: 2023,
-    duration: '2 meses'
+    duration: "2 meses",
   },
   {
-    slug: 'armario-clasico-restaurado',
-    title: 'Armario Clásico Restaurado',
-    description: 'Restauración completa de un armario antiguo de principios del siglo XX.',
-    fullDescription: 'Este armario de nogal de principios del siglo XX llegó a nuestro taller en estado de deterioro avanzado. Realizamos una restauración respetuosa que incluyó: consolidación de la estructura, reparación de las uniones con cola animal tradicional, limpieza y revitalización del acabado original, y fabricación de piezas faltantes utilizando madera de la misma época y características. El resultado es una pieza que conserva su historia y es funcional para el uso diario.',
-    category: 'Restauración',
-    image: '/images/armario-restaurado.jpg',
+    slug: "armario-clasico-restaurado",
+    title: "Armario Clásico Restaurado",
+    description:
+      "Restauración completa de un armario antiguo de principios del siglo XX.",
+    fullDescription:
+      "Este armario de nogal de principios del siglo XX llegó a nuestro taller en estado de deterioro avanzado. Realizamos una restauración respetuosa que incluyó: consolidación de la estructura, reparación de las uniones con cola animal tradicional, limpieza y revitalización del acabado original, y fabricación de piezas faltantes utilizando madera de la misma época y características. El resultado es una pieza que conserva su historia y es funcional para el uso diario.",
+    category: "Restauración",
+    image: "https://images.unsplash.com/photo-1595521624512-6d6bb3b20db8?w=800&q=80",
     images: [
-      '/images/armario-restaurado.jpg',
-      '/images/armario-antes.jpg',
-      '/images/armario-detalle.jpg'
+      "https://images.unsplash.com/photo-1595521624512-6d6bb3b20db8?w=800&q=80",
+      "https://images.unsplash.com/photo-1595521624512-6d6bb3b20db8?w=800&q=80",
+      "https://images.unsplash.com/photo-1595521624512-6d6bb3b20db8?w=800&q=80",
     ],
-    materials: ['Nogal original', 'Cola animal', 'Cera de abeja', 'Madera de época'],
+    materials: [
+      "Nogal original",
+      "Cola animal",
+      "Cera de abeja",
+      "Madera de época",
+    ],
     year: 2023,
-    duration: '4 semanas'
+    duration: "4 semanas",
   },
   {
-    slug: 'biblioteca-a-medida',
-    title: 'Biblioteca a Medida',
-    description: 'Sistema de estanterías modular para un estudio de arquitecto.',
-    fullDescription: 'Diseñamos e instalamos un sistema completo de estanterías y almacenaje para un estudio de arquitecto. El proyecto incluye módulos de diferentes tamaños, cajoneros con cerradura, espacios para maquetas y una zona de trabajo integrada. Utilizamos contrachapado de abeto con acabado lacado para una superficie resistente y fácil de limpiar, ideal para un entorno de trabajo profesional.',
-    category: 'Muebles a medida',
-    image: '/images/biblioteca.jpg',
+    slug: "biblioteca-a-medida",
+    title: "Biblioteca a Medida",
+    description:
+      "Sistema de estanterías modular para un estudio de arquitecto.",
+    fullDescription:
+      "Diseñamos e instalamos un sistema completo de estanterías y almacenaje para un estudio de arquitecto. El proyecto incluye módulos de diferentes tamaños, cajoneros con cerradura, espacios para maquetas y una zona de trabajo integrada. Utilizamos contrachapado de abeto con acabado lacado para una superficie resistente y fácil de limpiar, ideal para un entorno de trabajo profesional.",
+    category: "Muebles a medida",
+    image: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80",
     images: [
-      '/images/biblioteca.jpg',
-      '/images/biblioteca-detalle.jpg',
-      '/images/biblioteca-cajones.jpg'
+      "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80",
+      "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80",
+      "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80",
     ],
-    materials: ['Contrachapado de abeto', 'Laca mate', 'Metal para herrajes'],
+    materials: ["Contrachapado de abeto", "Laca mate", "Metal para herrajes"],
     year: 2024,
-    duration: '5 semanas'
+    duration: "5 semanas",
   },
   {
-    slug: 'escalera-madera',
-    title: 'Escalera de Madera',
-    description: 'Escalera de caracol de roble para un chalet unifamiliar.',
-    fullDescription: 'Escalera de caracol diseñada para conectar dos plantas de un chalet unifamiliar. La estructura es de roble macizo con contrahuellas de nogal para crear contraste. Cada peldaño fue mecanizado individualmente para asegurar un ajuste perfecto. El diseño incluye una barandilla curva que sigue la línea de la escalera, creando una pieza escultórica que es el centro del hogar.',
-    category: 'Carpintería estructural',
-    image: '/images/escalera.jpg',
+    slug: "escalera-madera",
+    title: "Escalera de Madera",
+    description: "Escalera de caracol de roble para un chalet unifamiliar.",
+    fullDescription:
+      "Escalera de caracol diseñada para conectar dos plantas de un chalet unifamiliar. La estructura es de roble macizo con contrahuellas de nogal para crear contraste. Cada peldaño fue mecanizado individualmente para asegurar un ajuste perfecto. El diseño incluye una barandilla curva que sigue la línea de la escalera, creando una pieza escultórica que es el centro del hogar.",
+    category: "Carpintería estructural",
+    image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80",
     images: [
-      '/images/escalera.jpg',
-      '/images/escalera-detalle.jpg',
-      '/images/escalera-barandilla.jpg'
+      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80",
+      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80",
+      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80",
     ],
-    materials: ['Roble macizo', 'Nogal', 'Metal para estructura'],
+    materials: ["Roble macizo", "Nogal", "Metal para estructura"],
     year: 2023,
-    duration: '6 semanas'
+    duration: "6 semanas",
   },
   {
-    slug: 'mesa-cafe-restauracion',
-    title: 'Mesa de Café Restaurada',
-    description: 'Restauración de una mesa de café de los años 60.',
-    fullDescription: 'Mesa de café de diseño escandinavo de los años 60 que necesitaba una restauración completa. Reparamos las patas, lijamos y aplicamos un nuevo acabado que respeta el tono original. El tapón de madera fue sustituido por uno nuevo fabricado con la misma técnica de chapado. La mesa recuperó su esplendor original y ahora es una pieza destacada en el salón de sus propietarios.',
-    category: 'Restauración',
-    image: '/images/mesa-cafe.jpg',
+    slug: "mesa-cafe-restauracion",
+    title: "Mesa de Café Restaurada",
+    description: "Restauración de una mesa de café de los años 60.",
+    fullDescription:
+      "Mesa de café de diseño escandinavo de los años 60 que necesitaba una restauración completa. Reparamos las patas, lijamos y aplicamos un nuevo acabado que respeta el tono original. El tapón de madera fue sustituido por uno nuevo fabricado con la misma técnica de chapado. La mesa recuperó su esplendor original y ahora es una pieza destacada en el salón de sus propietarios.",
+    category: "Restauración",
+    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
     images: [
-      '/images/mesa-cafe.jpg',
-      '/images/mesa-cafe-antes.jpg',
-      '/images/mesa-cafe-detalle.jpg'
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
     ],
-    materials: ['Chapado de haya', 'Madera de haya', 'Laca transparente'],
+    materials: ["Chapado de haya", "Madera de haya", "Laca transparente"],
     year: 2024,
-    duration: '2 semanas'
-  }
-]
+    duration: "2 semanas",
+  },
+];
 
 export async function getProjects(): Promise<Project[]> {
-  return projects
+  return projects;
 }
 
-export async function getProjectBySlug(slug: string): Promise<Project | undefined> {
-  return projects.find(project => project.slug === slug)
+export async function getProjectBySlug(
+  slug: string,
+): Promise<Project | undefined> {
+  return projects.find((project) => project.slug === slug);
 }
 
-export async function getProjectsByCategory(category: string): Promise<Project[]> {
-  return projects.filter(project => project.category === category)
+export async function getProjectsByCategory(
+  category: string,
+): Promise<Project[]> {
+  return projects.filter((project) => project.category === category);
 }

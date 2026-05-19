@@ -1,44 +1,52 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { getProjects } from '@/data/projects'
-import { Suspense } from 'react'
-import { Hammer, TreePine, Award, Palette, ExternalLink, Eye } from 'lucide-react'
+import Image from "next/image";
+import Link from "next/link";
+import { getProjects } from "@/data/projects";
+import { Suspense } from "react";
+import {
+  Hammer,
+  TreePine,
+  Award,
+  Palette,
+  ExternalLink,
+  Eye,
+} from "lucide-react";
 
 export const metadata = {
-  title: 'Nuestros Trabajos - Carpintería Los Artesanos',
-  description: 'Explora nuestros trabajos de carpintería artesanal. Muebles a medida, restauración y carpintería estructural.',
-}
+  title: "Nuestros Trabajos - Carpintería Los Artesanos",
+  description:
+    "Explora nuestros trabajos de carpintería artesanal. Muebles a medida, restauración y carpintería estructural.",
+};
 
-export const revalidate = 3600 // ISR: revalidar cada hora
+export const revalidate = 3600; // ISR: revalidar cada hora
 
 function getProjectIcon(category: string) {
   switch (category.toLowerCase()) {
-    case 'muebles a medida':
-      return <Hammer className="w-5 h-5" />
-    case 'restauración':
-      return <Award className="w-5 h-5" />
-    case 'carpintería estructural':
-      return <TreePine className="w-5 h-5" />
+    case "muebles a medida":
+      return <Hammer className="w-5 h-5" />;
+    case "restauración":
+      return <Award className="w-5 h-5" />;
+    case "carpintería estructural":
+      return <TreePine className="w-5 h-5" />;
     default:
-      return <Hammer className="w-5 h-5" />
+      return <Hammer className="w-5 h-5" />;
   }
 }
 
 function getCategoryColor(category: string) {
   switch (category.toLowerCase()) {
-    case 'muebles a medida':
-      return 'bg-amber-100 text-amber-700'
-    case 'restauración':
-      return 'bg-green-100 text-green-700'
-    case 'carpintería estructural':
-      return 'bg-blue-100 text-blue-700'
+    case "muebles a medida":
+      return "bg-amber-100 text-amber-700";
+    case "restauración":
+      return "bg-green-100 text-green-700";
+    case "carpintería estructural":
+      return "bg-blue-100 text-blue-700";
     default:
-      return 'bg-gray-100 text-gray-700'
+      return "bg-gray-100 text-gray-700";
   }
 }
 
 async function ProjectsGrid() {
-  const projects = await getProjects()
+  const projects = await getProjects();
 
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -65,7 +73,9 @@ async function ProjectsGrid() {
             </div>
             <div className="p-6">
               <div className="flex items-center gap-2 mb-3">
-                <div className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium ${getCategoryColor(project.category)}`}>
+                <div
+                  className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium ${getCategoryColor(project.category)}`}
+                >
                   {getProjectIcon(project.category)}
                   {project.category}
                 </div>
@@ -81,7 +91,7 @@ async function ProjectsGrid() {
                 {project.materials && (
                   <>
                     <span>•</span>
-                    <span>{project.materials.slice(0, 2).join(', ')}</span>
+                    <span>{project.materials.slice(0, 2).join(", ")}</span>
                   </>
                 )}
               </div>
@@ -90,14 +100,17 @@ async function ProjectsGrid() {
         </Link>
       ))}
     </div>
-  )
+  );
 }
 
 function ProjectsSkeleton() {
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       {[1, 2, 3, 4, 5, 6].map((i) => (
-        <div key={i} className="bg-white border border-gray-200 rounded-xl overflow-hidden">
+        <div
+          key={i}
+          className="bg-white border border-gray-200 rounded-xl overflow-hidden"
+        >
           <div className="aspect-[16/10] bg-gray-200 animate-pulse" />
           <div className="p-6 space-y-4">
             <div className="h-6 bg-gray-200 rounded animate-pulse" />
@@ -107,7 +120,7 @@ function ProjectsSkeleton() {
         </div>
       ))}
     </div>
-  )
+  );
 }
 
 export default function ProjectsPage() {
@@ -115,18 +128,19 @@ export default function ProjectsPage() {
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-amber-900 to-amber-800 text-white py-20">
-        <div 
-          className="absolute inset-0 opacity-20" 
+        <div
+          className="absolute inset-0 opacity-20"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='7' cy='7' r='7'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='7' cy='7' r='7'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           }}
         ></div>
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-bold mb-6">Nuestros Trabajos</h1>
             <p className="text-xl text-amber-100 max-w-2xl mx-auto">
-              Una selección de nuestros trabajos más recientes en carpintería artesanal, 
-              desde muebles a medida hasta restauraciones de piezas históricas
+              Una selección de nuestros trabajos más recientes en carpintería
+              artesanal, desde muebles a medida hasta restauraciones de piezas
+              históricas
             </p>
           </div>
         </div>
@@ -164,13 +178,16 @@ export default function ProjectsPage() {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Trabajos Recientes</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Trabajos Recientes
+            </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Explora nuestros trabajos más recientes y descubre cómo hemos ayudado a diferentes clientes 
-              a crear piezas únicas y duraderas para sus espacios
+              Explora nuestros trabajos más recientes y descubre cómo hemos
+              ayudado a diferentes clientes a crear piezas únicas y duraderas
+              para sus espacios
             </p>
           </div>
-          
+
           <Suspense fallback={<ProjectsSkeleton />}>
             <ProjectsGrid />
           </Suspense>
@@ -182,15 +199,17 @@ export default function ProjectsPage() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-yellow-400/20 border border-yellow-400 rounded-lg p-4 mb-8 max-w-2xl mx-auto">
             <p className="text-yellow-100 text-sm">
-              <strong>⚠️ Aviso Importante:</strong> Los trabajos mostrados son ejemplos educativos para desarrollar habilidades técnicas.
+              <strong>⚠️ Aviso Importante:</strong> Los trabajos mostrados son
+              ejemplos educativos para desarrollar habilidades técnicas.
             </p>
           </div>
           <h2 className="text-4xl font-bold mb-6">
             ¿Tienes un proyecto de carpintería en mente?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Estoy siempre buscando nuevos desafíos y oportunidades para crear piezas únicas. 
-            ¡Hablemos de cómo puedo ayudarte a hacer realidad tus ideas en madera!
+            Estoy siempre buscando nuevos desafíos y oportunidades para crear
+            piezas únicas. ¡Hablemos de cómo puedo ayudarte a hacer realidad tus
+            ideas en madera!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -211,5 +230,5 @@ export default function ProjectsPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }
