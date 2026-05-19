@@ -18,15 +18,15 @@ export const projects: Project[] = [
     title: "Mesa de Roble Macizo",
     description:
       "Mesa de comedor de roble macizo con acabado natural para una familia en Madrid.",
-    imageUrl: "https://images.unsplash.com/photo-1577140917170-285a8e5b9337?w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
     fullDescription:
       "Esta mesa de comedor fue diseñada y fabricada a medida para una familia que buscaba una pieza centerpiece para su comedor. Utilizamos roble macizo de primera calidad, seleccionado por su veta y durabilidad. El diseño incluye patas cónicas que le dan un toque moderno mientras mantiene la calidez de la madera tradicional. El acabado es un aceite natural que protege la madera sin alterar su color ni textura.",
     category: "Muebles a medida",
-    image: "https://images.unsplash.com/photo-1577140917170-285a8e5b9337?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
     images: [
-      "https://images.unsplash.com/photo-1577140917170-285a8e5b9337?w=800&q=80",
-      "https://images.unsplash.com/photo-1577140917170-285a8e5b9337?w=800&q=80",
-      "https://images.unsplash.com/photo-1577140917170-285a8e5b9337?w=800&q=80",
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
     ],
     materials: ["Roble macizo", "Aceite natural", "Metal para refuerzos"],
     year: 2024,
@@ -99,11 +99,11 @@ export const projects: Project[] = [
     fullDescription:
       "Escalera de caracol diseñada para conectar dos plantas de un chalet unifamiliar. La estructura es de roble macizo con contrahuellas de nogal para crear contraste. Cada peldaño fue mecanizado individualmente para asegurar un ajuste perfecto. El diseño incluye una barandilla curva que sigue la línea de la escalera, creando una pieza escultórica que es el centro del hogar.",
     category: "Carpintería estructural",
-    image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1589939705066-5ec94fad9ff2?w=800&q=80",
     images: [
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80",
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80",
+      "https://images.unsplash.com/photo-1589939705066-5ec94fad9ff2?w=800&q=80",
+      "https://images.unsplash.com/photo-1589939705066-5ec94fad9ff2?w=800&q=80",
+      "https://images.unsplash.com/photo-1589939705066-5ec94fad9ff2?w=800&q=80",
     ],
     materials: ["Roble macizo", "Nogal", "Metal para estructura"],
     year: 2023,
