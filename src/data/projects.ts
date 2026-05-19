@@ -18,15 +18,15 @@ export const projects: Project[] = [
     title: "Mesa de Roble Macizo",
     description:
       "Mesa de comedor de roble macizo con acabado natural para una familia en Madrid.",
-    imageUrl: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
+    imageUrl: "/images/mesa-de-roble-macizo-.jpg",
     fullDescription:
       "Esta mesa de comedor fue diseñada y fabricada a medida para una familia que buscaba una pieza centerpiece para su comedor. Utilizamos roble macizo de primera calidad, seleccionado por su veta y durabilidad. El diseño incluye patas cónicas que le dan un toque moderno mientras mantiene la calidez de la madera tradicional. El acabado es un aceite natural que protege la madera sin alterar su color ni textura.",
     category: "Muebles a medida",
-    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
+    image: "/images/mesa-de-roble-macizo-.jpg",
     images: [
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
+      "/images/mesa-de-roble-macizo-.jpg",
+      "/images/mesa-de-roble-macizo-.jpg",
+      "/images/mesa-de-roble-macizo-.jpg",
     ],
     materials: ["Roble macizo", "Aceite natural", "Metal para refuerzos"],
     year: 2024,
@@ -40,12 +40,12 @@ export const projects: Project[] = [
     fullDescription:
       "Proyecto integral de carpintería para la reforma de un loft industrial en el centro de Madrid. Creamos vigas decorativas, divisiones de espacio, escaleras y muebles a medida que complementan el estilo industrial del espacio. La combinación de madera reclaimed con elementos de metal crea una estética única que respeta la historia del edificio.",
     category: "Carpintería estructural",
-    image: "https://images.unsplash.com/photo-1565183938294-7563f3ff68c5?w=800&q=80",
+    image: "/images/loft-industrial.jpg",
     images: [
-      "https://images.unsplash.com/photo-1565183938294-7563f3ff68c5?w=800&q=80",
-      "https://images.unsplash.com/photo-1565183938294-7563f3ff68c5?w=800&q=80",
-      "https://images.unsplash.com/photo-1565183938294-7563f3ff68c5?w=800&q=80",
-      "https://images.unsplash.com/photo-1565183938294-7563f3ff68c5?w=800&q=80",
+      "/images/loft-industrial.jpg",
+      "/images/loft-industrial.jpg",
+      "/images/loft-industrial.jpg",
+      "/images/loft-industrial.jpg",
     ],
     materials: ["Madera reclaimed", "Acero negro", "Roble", "Pino treated"],
     year: 2023,
@@ -59,11 +59,11 @@ export const projects: Project[] = [
     fullDescription:
       "Este armario de nogal de principios del siglo XX llegó a nuestro taller en estado de deterioro avanzado. Realizamos una restauración respetuosa que incluyó: consolidación de la estructura, reparación de las uniones con cola animal tradicional, limpieza y revitalización del acabado original, y fabricación de piezas faltantes utilizando madera de la misma época y características. El resultado es una pieza que conserva su historia y es funcional para el uso diario.",
     category: "Restauración",
-    image: "https://images.unsplash.com/photo-1595521624512-6d6bb3b20db8?w=800&q=80",
+    image: "/images/armario-clasico-restaurado.jpg",
     images: [
-      "https://images.unsplash.com/photo-1595521624512-6d6bb3b20db8?w=800&q=80",
-      "https://images.unsplash.com/photo-1595521624512-6d6bb3b20db8?w=800&q=80",
-      "https://images.unsplash.com/photo-1595521624512-6d6bb3b20db8?w=800&q=80",
+      "/images/armario-clasico-restaurado.jpg",
+      "/images/armario-clasico-restaurado.jpg",
+      "/images/armario-clasico-restaurado.jpg",
     ],
     materials: [
       "Nogal original",
@@ -82,11 +82,11 @@ export const projects: Project[] = [
     fullDescription:
       "Diseñamos e instalamos un sistema completo de estanterías y almacenaje para un estudio de arquitecto. El proyecto incluye módulos de diferentes tamaños, cajoneros con cerradura, espacios para maquetas y una zona de trabajo integrada. Utilizamos contrachapado de abeto con acabado lacado para una superficie resistente y fácil de limpiar, ideal para un entorno de trabajo profesional.",
     category: "Muebles a medida",
-    image: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80",
+    image: "/images/biblioteca-a-medida-1-1024x576.jpg",
     images: [
-      "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80",
-      "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80",
-      "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80",
+      "/images/biblioteca-a-medida-1-1024x576.jpg",
+      "/images/biblioteca-a-medida-1-1024x576.jpg",
+      "/images/biblioteca-a-medida-1-1024x576.jpg",
     ],
     materials: ["Contrachapado de abeto", "Laca mate", "Metal para herrajes"],
     year: 2024,
@@ -99,11 +99,11 @@ export const projects: Project[] = [
     fullDescription:
       "Escalera de caracol diseñada para conectar dos plantas de un chalet unifamiliar. La estructura es de roble macizo con contrahuellas de nogal para crear contraste. Cada peldaño fue mecanizado individualmente para asegurar un ajuste perfecto. El diseño incluye una barandilla curva que sigue la línea de la escalera, creando una pieza escultórica que es el centro del hogar.",
     category: "Carpintería estructural",
-    image: "https://images.unsplash.com/photo-1589939705066-5ec94fad9ff2?w=800&q=80",
+    image: "/images/escalera-de-madersa.jpg",
     images: [
-      "https://images.unsplash.com/photo-1589939705066-5ec94fad9ff2?w=800&q=80",
-      "https://images.unsplash.com/photo-1589939705066-5ec94fad9ff2?w=800&q=80",
-      "https://images.unsplash.com/photo-1589939705066-5ec94fad9ff2?w=800&q=80",
+      "/images/escalera-de-madersa.jpg",
+      "/images/escalera-de-madersa.jpg",
+      "/images/escalera-de-madersa.jpg",
     ],
     materials: ["Roble macizo", "Nogal", "Metal para estructura"],
     year: 2023,
@@ -116,11 +116,11 @@ export const projects: Project[] = [
     fullDescription:
       "Mesa de café de diseño escandinavo de los años 60 que necesitaba una restauración completa. Reparamos las patas, lijamos y aplicamos un nuevo acabado que respeta el tono original. El tapón de madera fue sustituido por uno nuevo fabricado con la misma técnica de chapado. La mesa recuperó su esplendor original y ahora es una pieza destacada en el salón de sus propietarios.",
     category: "Restauración",
-    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
+    image: "/images/mesa-de-cafe.jpg",
     images: [
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
+      "/images/mesa-de-cafe.jpg",
+      "/images/mesa-de-cafe.jpg",
+      "/images/mesa-de-cafe.jpg",
     ],
     materials: ["Chapado de haya", "Madera de haya", "Laca transparente"],
     year: 2024,
