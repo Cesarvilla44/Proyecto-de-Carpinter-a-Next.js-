@@ -4,17 +4,45 @@
 ![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue?style=for-the-badge&logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)
+![Shadcn UI](https://img.shields.io/badge/Shadcn_UI-Latest-000000?style=for-the-badge)
 
-Sitio web corporativo de carpintería artesanal construido con Next.js 14, TypeScript, Tailwind CSS y Server Actions.
+Sitio web corporativo de carpintería artesanal construido con **Next.js 14**, demostrando características avanzadas como **Shadcn UI**, **Server Actions**, **Metadatos Dinámicos**, **ISR**, y **Streaming con Suspense**.
 
-## 🚀 Características
+## 🎯 Características Principales
+
+### ✅ Shadcn UI
+- Componentes reutilizables y personalizables
+- Componentes implementados: `Button`, `Card`
+- Integración con Radix UI y Tailwind CSS
+- Ubicación: `/src/components/ui/`
+
+### ✅ Server Actions
+- Manejo seguro de formularios en el servidor
+- Validación de datos en el servidor
+- Revalidación de caché con `revalidatePath`
+- Archivo: `/src/app/actions/contact.ts`
+
+### ✅ Rutas Dinámicas con Metadatos Dinámicos
+- Rutas dinámicas: `/proyectos/[slug]`
+- Metadatos generados por proyecto (título, descripción, keywords, Open Graph)
+- Función: `generateMetadata()` en `/src/app/proyectos/[slug]/page.tsx`
+
+### ✅ ISR (Incremental Static Regeneration)
+- Revalidación automática cada hora
+- Configurado en: `/proyectos`, `/proyectos/[slug]`, `/contacto`
+- Permite actualizaciones sin rebuild completo
+
+### ✅ Streaming con Suspense
+- Componentes asincronos con Suspense
+- Carga progresiva de contenido
+- Fallback UI mientras se carga
+- Implementado en: Galería de proyectos y proyectos relacionados
+
+## 🚀 Características Adicionales
 
 - **Next.js 14 App Router**: Arquitectura moderna con Server Components
 - **TypeScript**: Tipado estático para mayor seguridad
 - **Tailwind CSS**: Estilos utilitarios con paleta de colores personalizada
-- **ISR (Incremental Static Regeneration)**: Galería de proyectos optimizada
-- **Server Actions**: Formulario de contacto sin API routes
-- **Rutas Dinámicas**: Páginas de detalle de proyectos con `generateStaticParams`
 - **SEO Optimizado**: Metadata API dinámica para cada página
 - **Middleware**: Cabeceras de seguridad personalizadas
 - **Loading States**: Suspense y esqueletos de carga
@@ -45,26 +73,33 @@ npm run dev
 ```
 src/
 ├── app/
+│   ├── actions/
+│   │   └── contact.ts           # Server Actions
 │   ├── contacto/
-│   │   ├── actions.ts       # Server Actions para el formulario
-│   │   └── page.tsx         # Página de contacto
+│   │   ├── ContactForm.tsx      # Formulario con Server Actions
+│   │   └── page.tsx             # Página de contacto
 │   ├── nosotros/
-│   │   └── page.tsx         # Página "Sobre Nosotros"
+│   │   └── page.tsx             # Página "Sobre Nosotros"
 │   ├── proyectos/
 │   │   ├── [slug]/
-│   │   │   └── page.tsx     # Ruta dinámica de proyectos
-│   │   └── page.tsx         # Galería de proyectos (ISR)
-│   ├── error.tsx            # Página de error global
-│   ├── globals.css          # Estilos globales
-│   ├── layout.tsx           # Layout raíz
-│   ├── loading.tsx          # Loading global
-│   └── page.tsx             # Página de inicio
+│   │   │   └── page.tsx         # Ruta dinámica con metadatos dinámicos
+│   │   └── page.tsx             # Galería con ISR y Suspense
+│   ├── error.tsx                # Página de error global
+│   ├── globals.css              # Estilos globales
+│   ├── layout.tsx               # Layout raíz
+│   ├── loading.tsx              # Loading global
+│   └── page.tsx                 # Página de inicio
 ├── components/
-│   ├── Footer.tsx           # Componente de pie de página
-│   └── Header.tsx           # Componente de navegación
+│   ├── ui/
+│   │   ├── button.tsx           # Shadcn Button
+│   │   └── card.tsx             # Shadcn Card
+│   ├── Footer.tsx               # Componente de pie de página
+│   └── Header.tsx               # Componente de navegación
 ├── data/
-│   └── projects.ts          # Datos de proyectos (base de datos temporal)
-└── middleware.ts            # Middleware para seguridad
+│   └── projects.ts              # Datos de proyectos
+├── lib/
+│   └── utils.ts                 # Utilidades (cn function)
+└── middleware.ts                # Middleware para seguridad
 ```
 
 ## 🎨 Tecnologías Utilizadas
@@ -73,6 +108,8 @@ src/
 - **React 18**: Biblioteca UI
 - **TypeScript**: Tipado estático
 - **Tailwind CSS**: Framework CSS
+- **Shadcn UI**: Componentes reutilizables
+- **Radix UI**: Primitivos de UI accesibles
 - **Lucide React**: Iconos
 - **next/font**: Optimización de fuentes
 
@@ -80,7 +117,7 @@ src/
 
 - **/**: Página de inicio con Hero Section, servicios y proyectos recientes
 - **/nosotros**: Historia del taller y proceso artesanal
-- **/proyectos**: Galería de proyectos con ISR
+- **/proyectos**: Galería de proyectos con ISR y Suspense
 - **/proyectos/[slug]**: Detalle de cada proyecto con metadatos dinámicos
 - **/contacto**: Formulario de contacto con Server Actions
 
@@ -112,6 +149,18 @@ Los detalles de proyectos usan rutas dinámicas con `generateStaticParams`:
 - Metadatos SEO dinámicos
 - Build time optimizado
 
+### Suspense & Streaming
+Componentes asincronos con Suspense para:
+- Carga progresiva de contenido
+- Mejor experiencia de usuario
+- Fallback UI mientras se carga
+
+### Shadcn UI
+Componentes reutilizables y personalizables:
+- Button con múltiples variantes
+- Card con estructura completa
+- Integración con Tailwind CSS
+
 ## 🚀 Scripts Disponibles
 
 ```bash
@@ -124,10 +173,10 @@ npm run lint     # Ejecuta ESLint
 ## 📝 Notas de Desarrollo
 
 ### Imágenes
-El proyecto usa el componente `Image` de Next.js con:
-- `priority` en el Hero section
-- `placeholder="blur"` en la galería
-- `sizes` optimizados para responsive
+El proyecto usa imágenes locales en `public/images/` con:
+- Optimización de tamaño
+- Carga rápida
+- Responsive
 
 ### SEO
 - Metadata API en cada página
@@ -148,10 +197,6 @@ Este proyecto está optimizado para desplegar en [Vercel](https://vercel.com):
 2. Importar el proyecto en Vercel
 3. Desplegar automáticamente
 
-## 📸 Imágenes
-
-Las imágenes deben colocarse en `public/images/`. Actualmente el proyecto usa placeholders que deberían reemplazarse con imágenes reales del taller.
-
 ## 🤝 Contribuir
 
 Este es un proyecto demostrativo. Para contribuir:
@@ -164,3 +209,7 @@ Este es un proyecto demostrativo. Para contribuir:
 ## 📄 Licencia
 
 Este proyecto es de uso educativo.
+
+---
+
+**Proyecto de demostración para prácticas de Next.js 14 con características avanzadas**
